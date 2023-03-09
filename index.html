@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<!-- <input defaultValue="1000" type="text" /> -->
+
+
+<body>
+    <img src="images\logo.svg" alt="" class="logo">
+    <div class="mainbox">
+        <div class="box1">
+            <div class="box1a">
+                <p class="text-1">Bill</p>
+
+                <div class="inputbox">
+                    <p id="fix-1" class="fix">$</p>
+                    <input placeholder="0" type="number" id=bill class="numeric-1">
+                </div>
+            </div>
+
+            <div class="box1b">
+                <p class="text-1">Selec Tip %</p>
+
+                <div class="choice-box">
+                    <button id="five" class="numeric-2">5%</button>
+                    <button id="ten" class="numeric-2">10%</button>
+                    <button id="fifteen" class="numeric-2">15%</button>
+                    <button id="twentyFive" class="numeric-2">25%</button>
+                    <button id="fifty" class="numeric-2">50%</button>
+
+                    <input placeholder="Custom" type="text" id="custom" class="numeric-2">
+                </div>
+            </div>
+            <div class="box1c">
+                <p class="text-1">Number of People</p>
+
+                <div class="inputbox">
+                    <p id="fix-1" class="fix"><img src="images\icon-person.svg" alt="People"></p>
+                    <input placeholder="0" type="number" id="persons" class="numeric-1">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="text-no">
+                <div class="textbox">
+                    <p class="text-2">
+                        Tip Amount
+                    </p>
+                    <p class="fix">
+                        /person</p>
+                </div>
+
+                <div class="number-box">$0.00</div>
+            </div>
+
+
+            <div class="text-no">
+                <div class="textbox">
+                    <p class="text-2">
+                        Total
+                    </p>
+                    <p class="fix">
+                        /person</p>
+                </div>
+
+                <div class="number-box">$0.00</div>
+            </div>
+
+            <button class="reset">RESET</button>
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
